@@ -9,6 +9,10 @@ public class Card {
         this.rank = rank;
     }
 
+    public int getValue() {
+        return rank.getValue();
+    }
+
     public Suit getSuit() {
         return suit;
     }
@@ -19,9 +23,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "suit=" + suit +
-                ", rank=" + rank +
-                '}';
+        return rank + " of " + suit;
     }
 }

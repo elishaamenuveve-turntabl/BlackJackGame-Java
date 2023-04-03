@@ -5,12 +5,10 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Deck {
-    private final int numberOfCards = 52;
-
     private ArrayList<Card> cards;
 
     public Deck() {
-        this.cards  = new ArrayList<>(numberOfCards);
+        this.cards  = new ArrayList<>(52);
         this.populate();
     }
 
@@ -26,10 +24,23 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
+    public Card pop() {
+        //check for cards
+        return cards.remove(0);
+    }
+
+    public ArrayList<Card> getCards() {
+        return cards;
+    }
+
+    public int getSize() {
+        return cards.size();
+    }
+
     @Override
     public String toString() {
         return "Deck{" +
-                "numberOfCards=" + numberOfCards +
+                "numberOfCards=" + getSize() +
                 ", cards=" + cards +
                 '}';
     }

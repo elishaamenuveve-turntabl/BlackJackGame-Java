@@ -1,20 +1,38 @@
 package org.example.game;
 
 import org.example.card.Deck;
+import org.example.card.Looper;
 import org.example.dealer.Dealer;
 import org.example.player.Decision;
 import org.example.player.Player;
 
+import java.util.ArrayList;
+
 public class Game {
-    private static boolean isOver;
-    public static void main(String[] args) {
+
+    ArrayList<Player> players;
+
+    public Game() {
+        players = new ArrayList<>();
+    }
+
+    private void createPlayers() {
+        players.add(new Player());
+    }
+
+
+
+    public void run() {
         Dealer dealer = new Dealer(new Deck());
         dealer.shuffleCards();
+//
+//        for (int i = 0; i < 3; i++) {
+//            createPlayers();
+//        }
 
-        Player player1 = new Player();
-        Player player2 = new Player();
-        Player player3 = new Player();
 
+        //
+        Player player1 = new Player(), player2 = new Player(), player3 = new Player();
         dealer.deal(player1, 2);
         dealer.deal(player2, 2);
         dealer.deal(player3, 2);
@@ -40,4 +58,14 @@ public class Game {
         System.out.println(player3);
         System.out.println(dealer);
     }
+
+
+
+
+    public void loopThrough(Runnable function, int numberOfLoops) {
+        for (int i = 0; i < numberOfLoops; i++) {
+            function.run();
+        }
+    }
 }
+

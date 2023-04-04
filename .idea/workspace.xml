@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a7da12-7a2b-43e2-ab5e-1641ba16c36b" name="Changes" comment="Added all basic functionality for cards">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/player/Decision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/dealer/Dealer.java" afterDir="false" />
+    <list default="true" id="b8a7da12-7a2b-43e2-ab5e-1641ba16c36b" name="Changes" comment="Added all basic gameplay functionality">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/card/Looper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/card/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/card/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dealer/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dealer/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/card/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/card/DeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,7 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -127,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680544061839</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added all basic gameplay functionality">
+      <created>1680609385820</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680609385820</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added all basic functionality for cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all basic functionality for cards" />
+    <MESSAGE value="Added all basic gameplay functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all basic gameplay functionality" />
   </component>
 </project>

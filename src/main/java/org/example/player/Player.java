@@ -10,7 +10,7 @@ public class Player {
     private ArrayList<Card> hand;
 
     public Player() {
-        Player.numberOfPlayers++;
+        numberOfPlayers++;
         this.id = numberOfPlayers;
         this.hand = new ArrayList<>(3);
     }
@@ -27,12 +27,21 @@ public class Player {
         hand.add(card);
      }
 
+     public Decision decision() {
+        if (this.getHandValue() < 17){
+            System.out.println("Player " + id + " "+ Decision.HIT + "s");
+            return Decision.HIT;
+        }
+         System.out.println("Player " + id + " "+ Decision.STICK + "s");
+        return Decision.STICK;
+     }
+
     @Override
     public String toString() {
         return "Player{" +
                 "id=" + id +
                 ", hand=" + hand +
-                ", handValue=" + getHandValue() +
+                ", handValue=" + getHandValue() +  
                 '}';
     }
 }

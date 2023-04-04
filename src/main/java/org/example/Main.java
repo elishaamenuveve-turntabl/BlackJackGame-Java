@@ -10,15 +10,15 @@ public class Main {
         System.out.println(newDeck);
 
         // shuffle deck
-        newDeck.shuffle();
-        System.out.println(newDeck);
+//        newDeck.shuffle();
+//        System.out.println(newDeck);
 
         // create player
         Player mary = new Player();
 
         // give player card
-        mary.takesCard(newDeck.pop());
-        mary.takesCard(newDeck.pop());
+        mary.takesCard(newDeck.removeCard());
+
 
 
         System.out.println(mary);

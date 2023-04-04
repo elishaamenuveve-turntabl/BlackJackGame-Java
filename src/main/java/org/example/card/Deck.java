@@ -1,7 +1,6 @@
 package org.example.card;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class Deck {
@@ -24,7 +23,7 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
-    public Card pop() {
+    public Card removeCard() {
         //check for cards
         return cards.remove(0);
     }
@@ -37,6 +36,7 @@ public class Deck {
         return cards.size();
     }
 
+
     @Override
     public String toString() {
         return "Deck{" +
@@ -44,4 +44,8 @@ public class Deck {
                 ", cards=" + cards +
                 '}';
     }
+
+
 }
+
+

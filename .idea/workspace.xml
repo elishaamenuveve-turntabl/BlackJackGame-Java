@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a7da12-7a2b-43e2-ab5e-1641ba16c36b" name="Changes" comment="Added all basic gameplay functionality">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/card/Looper.java" afterDir="false" />
+    <list default="true" id="b8a7da12-7a2b-43e2-ab5e-1641ba16c36b" name="Changes" comment="Implementing Game Class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dummy/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dummy/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dummy/Wall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/card/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/card/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dealer/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dealer/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/game/GameRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/dealer/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dealer/DealerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,15 +50,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RunManager" selected="Application.Game">
-    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.game.Game" />
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="GameRoom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.game.GameRoom" />
       <module name="BlackJackGame" />
       <extension name="coverage">
         <pattern>
@@ -76,6 +87,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.example.dummy.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.dummy.Main" />
+      <module name="BlackJackGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.dummy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealerTest.dealerDealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlackJackGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.dealer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.dealer" />
+      <option name="MAIN_CLASS_NAME" value="org.example.dealer.DealerTest" />
+      <option name="METHOD_NAME" value="dealerDealTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeckTest.cardUniquenessInDeckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BlackJackGame" />
       <extension name="coverage">
@@ -94,8 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Game" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.org.example.dummy.Main" />
+        <item itemvalue="JUnit.DealerTest.dealerDealTest" />
+        <item itemvalue="Application.GameRoom" />
         <item itemvalue="JUnit.DeckTest.cardUniquenessInDeckTest" />
       </list>
     </recent_temporary>
@@ -130,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680609385820</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementing Game Class">
+      <created>1680629790378</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680629790378</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +197,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added all basic functionality for cards" />
     <MESSAGE value="Added all basic gameplay functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all basic gameplay functionality" />
+    <MESSAGE value="Implementing Game Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Game Class" />
   </component>
 </project>

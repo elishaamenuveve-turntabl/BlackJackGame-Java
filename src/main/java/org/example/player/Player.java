@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Player {
     private static int numberOfPlayers;
-    private int id;
+    private final int id;
     private ArrayList<Card> hand;
 
     public Player() {
@@ -35,6 +35,10 @@ public class Player {
          System.out.println("Player " + id + " "+ Decision.STICK + "s");
         return Decision.STICK;
      }
+
+    public int getId() {
+        return id;
+    }
 
     @Override
     public String toString() {

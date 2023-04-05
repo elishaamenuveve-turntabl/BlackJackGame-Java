@@ -1,5 +1,7 @@
 package org.example.card;
 
+import java.util.Objects;
+
 public class Card {
     private final Suit suit;
     private final Rank rank;
@@ -19,6 +21,12 @@ public class Card {
 
     public Rank getRank() {
         return rank;
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(suit, rank);
     }
 
     @Override

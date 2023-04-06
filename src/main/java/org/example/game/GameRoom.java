@@ -131,23 +131,10 @@ public class GameRoom {
                 }
             }
         }
-//        for(Map.Entry<Player, Decision> playerDecision: playerDecisions.entrySet()) {
-//            if (playerDecision.getValue() == Decision.HIT) {
-//                dealer.deal(playerDecision.getKey(),1);
-//            }
-//        }
-//            playerDecisions.values().removeAll(Collections.singleton(Decision.STICK));
-
     }
 
-    public void displayAllPlayersInformation() {
-        for (Player player: players) {
-            System.out.println(player);
-        }
-    }
      public boolean isPlayerBust(Player player) {
         return player.handValue() > 21;
      }
-
 }
 

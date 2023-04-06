@@ -5,29 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8a7da12-7a2b-43e2-ab5e-1641ba16c36b" name="Changes" comment="Implementing Game Class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dummy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dummy/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dummy/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/game/PlayerState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/card/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/card/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dealer/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dealer/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/game/GameRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/game/GameRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/game/GameRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/dealer/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dealer/DealerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -44,6 +45,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2NueM0pqiRTn3LYk1enEle43KTf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,10 +58,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Artifacts",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/elishaamenuveve/Documents/Work/Turntabl/Labs/BlackJackGame-Java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
@@ -150,6 +163,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680518344603</updated>
+      <workItem from="1680727379474" duration="196000" />
+      <workItem from="1680727669813" duration="10577000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680531899088</created>
@@ -181,6 +196,9 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

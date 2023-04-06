@@ -15,7 +15,7 @@ public class Player {
         this.hand = new ArrayList<>(3);
     }
 
-    public int getHandValue () {
+    public int handValue() {
         int handValue = 0;
         for (Card card : hand) {
             handValue += card.getValue();
@@ -28,8 +28,8 @@ public class Player {
      }
 
      public Decision decision() {
-        if (this.getHandValue() < 17){
-            System.out.println("Player " + id + " "+ Decision.HIT + "s");
+        if (this.handValue() < 17){
+            System.out.println("Player " + id + " has decided to "+ Decision.HIT);
             return Decision.HIT;
         }
          System.out.println("Player " + id + " "+ Decision.STICK + "s");
@@ -45,7 +45,7 @@ public class Player {
         return "Player{" +
                 "id=" + id +
                 ", hand=" + hand +
-                ", handValue=" + getHandValue() +  
+                ", handValue=" + handValue() +
                 '}';
     }
 }

@@ -13,13 +13,14 @@ public class Dealer {
 
     public void shuffleCards() {
         deck.shuffle();
+        System.out.println("Dealer shuffles his deck of cards");
     }
 
     public void deal(Player player, int numberOfCards) {
         for (int i = 0; i < numberOfCards; i++) {
             Card cardBeingGivenOut = deck.removeCard();
             player.takesCard(cardBeingGivenOut);
-            System.out.println("Dealer deals card to player " + player.getId());
+            System.out.println("Dealer deals a card to player " + player.getId());
         }
     }
 

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
 public class DeckTest {
@@ -35,11 +36,18 @@ public class DeckTest {
             }
         }
 
-
         // assert
         assertEquals(deck.getSize(), uniqueCards.size());
         assertEquals(52, uniqueCards.size());
         assertEquals(52, deck.getSize());
+    }
+
+    @Test
+    public void removeCardFromDeckTest() {
+        Card removedCard  = deck.removeCard();
+
+        assertEquals(51, deck.getSize());
+        assertFalse(deck.getCards().contains(removedCard));
     }
 
 }

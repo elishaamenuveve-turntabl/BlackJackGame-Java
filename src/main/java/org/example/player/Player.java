@@ -1,6 +1,10 @@
 package org.example.player;
 
 import org.example.card.Card;
+import org.example.player.strategy.AlwaysHitStrategy;
+import org.example.player.strategy.AlwaysStickStrategy;
+import org.example.player.strategy.DefaultStrategy;
+import org.example.player.strategy.Strategy;
 
 import java.util.ArrayList;
 
@@ -8,11 +12,17 @@ public class Player {
     private static int numberOfPlayers;
     private final int id;
     private ArrayList<Card> hand;
+    private final Strategy strategy;
 
-    public Player() {
+    public Player(Strategy strategy) {
         numberOfPlayers++;
         this.id = numberOfPlayers;
         this.hand = new ArrayList<>(3);
+        this.strategy = strategy;
+    }
+
+    public Player() {
+        this(new DefaultStrategy());
     }
 
     public int handValue() {
@@ -28,12 +38,7 @@ public class Player {
      }
 
      public Decision decision() {
-        if (this.handValue() < 17){
-            System.out.println("Player " + id + " has decided to "+ Decision.HIT);
-            return Decision.HIT;
-        }
-         System.out.println("Player " + id + " "+ Decision.STICK + "s");
-        return Decision.STICK;
+        return strategy.hitOrStick(hand);
      }
 
     public int getId() {
